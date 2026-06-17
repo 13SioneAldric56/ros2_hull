@@ -1,0 +1,5 @@
+[console_scripts]
+gps_imu_fusion_node = hull_navigation.gps_imu_fusion_node:main
+gps_navigator_node = hull_navigation.gps_navigator_node:main
+send_nav_goal = hull_navigation.send_nav_goal:main
+

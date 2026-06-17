@@ -1,0 +1,3 @@
+[console_scripts]
+serial_imu_node = hull_serial.serial_imu_node:main
+

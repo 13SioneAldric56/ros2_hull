@@ -1,0 +1,70 @@
+capture_directory: "~"
+fixed_frame: map
+target_frame: ""
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: false
+window_width: 1400
+window_height: 900
+view_scale: 8.0
+offset_x: 0
+offset_y: 0
+use_latest_transforms: true
+background: "#a0a0a4"
+image_transport: raw
+displays:
+  - type: mapviz_plugins/tile_map
+    name: Bing Local
+    config:
+      visible: true
+      collapsed: false
+      custom_sources:
+        - base_url: http://127.0.0.1:8080/{level}/{x}/{y}.jpg
+          max_zoom: 17
+          name: BingLocal
+          type: wmts
+      bing_api_key: ""
+      stadia_api_key: ""
+      source: BingLocal
+  - type: mapviz_plugins/navsat
+    name: GPS Fix
+    config:
+      visible: true
+      collapsed: true
+      topic: /fix
+      color: "#00ff00"
+      draw_style: points
+      position_tolerance: 0.5
+      buffer_size: 0
+  - type: mapviz_plugins/path
+    name: GPS Path
+    config:
+      visible: true
+      collapsed: true
+      topic: /gps_path
+      color: "#ff0000"
+  - type: mapviz_plugins/path
+    name: Fused Path
+    config:
+      visible: true
+      collapsed: false
+      topic: /fused_path
+      color: "#0000ff"
+  - type: mapviz_plugins/path
+    name: Nav Plan
+    config:
+      visible: true
+      collapsed: false
+      topic: /navigation/plan
+      color: "#ffff00"
+  - type: mapviz_plugins/point
+    name: Nav Goal
+    config:
+      visible: true
+      collapsed: false
+      topic: /navigation/goal_pose
+      color: "#ff00ff"
+      radius: 3

@@ -1,0 +1,1 @@
+Invoking command in '/home/sione/ros2_hull/build/nmea_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sione/ros2_hull/src/nmea_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sione/ros2_hull/install/nmea_msgs

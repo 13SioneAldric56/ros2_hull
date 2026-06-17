@@ -1,0 +1,4 @@
+Invoking command in '/home/sione/ros2_hull/build/nmea_msgs': CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/hull_serial:/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/nmea_msgs -- -j16 -l16
+Invoked command in '/home/sione/ros2_hull/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/hull_serial:/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/nmea_msgs -- -j16 -l16
+Invoking command in '/home/sione/ros2_hull/build/nmea_msgs': CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/hull_serial:/opt/ros/humble /usr/bin/cmake --install /home/sione/ros2_hull/build/nmea_msgs
+Invoked command in '/home/sione/ros2_hull/build/nmea_msgs' returned '0': CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/hull_serial:/opt/ros/humble /usr/bin/cmake --install /home/sione/ros2_hull/build/nmea_msgs

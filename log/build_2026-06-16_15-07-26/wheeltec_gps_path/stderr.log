@@ -1,0 +1,7 @@
+/home/sione/ros2_hull/src/wheeltec_gps_path/src/gps_path.cpp:5:10: fatal error: nav_msgs/msg/path.hpp: 没有那个文件或目录
+    5 | #include <nav_msgs/msg/path.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gps_path.dir/build.make:76：CMakeFiles/gps_path.dir/src/gps_path.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/gps_path.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

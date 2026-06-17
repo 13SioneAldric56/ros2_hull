@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing hull_navigation.egg-info/PKG-INFO
+writing dependency_links to hull_navigation.egg-info/dependency_links.txt
+writing entry points to hull_navigation.egg-info/entry_points.txt
+writing requirements to hull_navigation.egg-info/requires.txt
+writing top-level names to hull_navigation.egg-info/top_level.txt
+reading manifest file 'hull_navigation.egg-info/SOURCES.txt'
+writing manifest file 'hull_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull-navigation.egg-link (link to .)
+Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_navigator_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing send_nav_goal script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+
+Installed /home/sione/ros2_hull/build/hull_navigation
+running symlink_data

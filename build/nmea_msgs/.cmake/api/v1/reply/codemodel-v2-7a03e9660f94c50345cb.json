@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-709158fa6e7f5158960a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "nmea_msgs__py",
+					"jsonFile" : "directory-nmea_msgs__py-b3a403da7e43a56bac4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sione/ros2_hull/build/nmea_msgs/nmea_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "nmea_msgs__rs",
+					"jsonFile" : "directory-nmea_msgs__rs-291098ab800ea81f7cad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/sione/ros2_hull/build/nmea_msgs/nmea_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "nmea_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_nmea_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_nmea_msgs_egg-fdc5da9047839d8df35e.json",
+					"name" : "ament_cmake_python_build_nmea_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_nmea_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_nmea_msgs-454118bb69d2ee452d3e.json",
+					"name" : "ament_cmake_python_symlink_nmea_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs-78639a768efa14391344.json",
+					"name" : "nmea_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__cpp-acb362de32e2e4804942.json",
+					"name" : "nmea_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "nmea_msgs__py::@b56833807a631af8832b",
+					"jsonFile" : "target-nmea_msgs__py-978bf9a1381801e2e791.json",
+					"name" : "nmea_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_generator_c-631122527591ba1e640f.json",
+					"name" : "nmea_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_generator_py-e0a08fe9f61eccd739ad.json",
+					"name" : "nmea_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_c-d705e47a94873250e169.json",
+					"name" : "nmea_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_c__pyext-2de5e29cd90b04a87c23.json",
+					"name" : "nmea_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_cpp-a165c349b16db58e0d06.json",
+					"name" : "nmea_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_fastrtps_c-a570e20fe60e341bf3b3.json",
+					"name" : "nmea_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_fastrtps_c__pyext-8f0096ac75ea41e5dff1.json",
+					"name" : "nmea_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_fastrtps_cpp-162a41af3efdfe24b14c.json",
+					"name" : "nmea_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_introspection_c-c2632e5776a6c960df8b.json",
+					"name" : "nmea_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_introspection_c__pyext-ca8d7c3824f1152375b1.json",
+					"name" : "nmea_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs__rosidl_typesupport_introspection_cpp-4df3c88acd99cf8a7999.json",
+					"name" : "nmea_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "nmea_msgs__rs::@42a6aed008aa4f41b032",
+					"jsonFile" : "target-nmea_msgs__rs-ce5b2a732a8cc1305ddd.json",
+					"name" : "nmea_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nmea_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nmea_msgs_uninstall-9e22a348987a5df19c82.json",
+					"name" : "nmea_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-836cf6406d4f5de08bff.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sione/ros2_hull/build/nmea_msgs",
+		"source" : "/home/sione/ros2_hull/src/nmea_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

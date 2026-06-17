@@ -1,0 +1,1 @@
+Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sione/ros2_hull/src/wheeltec_gps_path -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/sione/ros2_hull/install/wheeltec_gps_path

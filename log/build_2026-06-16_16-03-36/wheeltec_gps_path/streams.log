@@ -1,0 +1,65 @@
+[0.012s] Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16
+[0.061s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.182s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.206s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.209s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.215s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.225s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.238s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.271s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.287s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.316s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.317s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.438s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.500s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[0.500s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.516s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.520s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.522s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.611s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.672s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.673s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.673s] -- Configured cppcheck include dirs: /home/sione/ros2_hull/src/wheeltec_gps_path/include
+[0.674s] -- Configured cppcheck exclude dirs and/or files: 
+[0.675s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.675s] -- Configured cpplint exclude dirs and/or files: 
+[0.675s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.675s] -- Added test 'lint_cmake' to check CMake code style
+[0.676s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.677s] -- Added test 'uncrustify' to check C / C++ code style
+[0.677s] -- Configured uncrustify additional arguments: 
+[0.677s] -- Added test 'xmllint' to check XML markup files
+[0.678s] -- Configuring done
+[0.689s] -- Generating done
+[0.693s] -- Build files have been written to: /home/sione/ros2_hull/build/wheeltec_gps_path
+[0.722s] Consolidate compiler generated dependencies of target gps_path
+[0.754s] [ 50%] Building CXX object CMakeFiles/gps_path.dir/src/gps_path.cpp.o
+[7.624s] [100%] Linking CXX executable gps_path
+[8.012s] [100%] Built target gps_path
+[8.022s] Invoked command in '/home/sione/ros2_hull/build/wheeltec_gps_path' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16
+[8.032s] Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sione/ros2_hull/build/wheeltec_gps_path
+[8.040s] -- Install configuration: ""
+[8.041s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/lib/wheeltec_gps_path/gps_path
+[8.044s] -- Set runtime path of "/home/sione/ros2_hull/install/wheeltec_gps_path/lib/wheeltec_gps_path/gps_path" to ""
+[8.044s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch
+[8.044s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch/gps_path.launch.py
+[8.044s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch/mapviz_path.launch.py
+[8.044s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/config
+[8.044s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/config/mapviz_local.mvc
+[8.045s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/lib/wheeltec_gps_path/bing_tile_server.py
+[8.045s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/package_run_dependencies/wheeltec_gps_path
+[8.045s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/parent_prefix_path/wheeltec_gps_path
+[8.045s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/ament_prefix_path.sh
+[8.045s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/ament_prefix_path.dsv
+[8.045s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/path.sh
+[8.045s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/path.dsv
+[8.045s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.bash
+[8.046s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.sh
+[8.046s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.zsh
+[8.046s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.dsv
+[8.047s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/package.dsv
+[8.047s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/packages/wheeltec_gps_path
+[8.047s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/cmake/wheeltec_gps_pathConfig.cmake
+[8.047s] -- Up-to-date: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/cmake/wheeltec_gps_pathConfig-version.cmake
+[8.047s] -- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/package.xml
+[8.048s] Invoked command in '/home/sione/ros2_hull/build/wheeltec_gps_path' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sione/ros2_hull/build/wheeltec_gps_path

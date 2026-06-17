@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "nmea_msgs__rs",
+		"source" : "/home/sione/ros2_hull/build/nmea_msgs/nmea_msgs__rs"
+	}
+}

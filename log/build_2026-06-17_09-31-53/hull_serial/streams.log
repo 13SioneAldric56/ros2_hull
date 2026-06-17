@@ -1,0 +1,22 @@
+[0.741s] Invoking command in '/home/sione/ros2_hull/build/hull_serial': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_serial/build --no-deps symlink_data --force
+[0.933s] running develop
+[1.043s] running egg_info
+[1.043s] writing hull_serial.egg-info/PKG-INFO
+[1.044s] writing dependency_links to hull_serial.egg-info/dependency_links.txt
+[1.044s] writing entry points to hull_serial.egg-info/entry_points.txt
+[1.044s] writing requirements to hull_serial.egg-info/requires.txt
+[1.044s] writing top-level names to hull_serial.egg-info/top_level.txt
+[1.045s] reading manifest file 'hull_serial.egg-info/SOURCES.txt'
+[1.046s] writing manifest file 'hull_serial.egg-info/SOURCES.txt'
+[1.047s] running build_ext
+[1.047s] Creating /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull-serial.egg-link (link to .)
+[1.048s] Installing serial_imu_node script to /home/sione/ros2_hull/install/hull_serial/lib/hull_serial
+[1.048s] 
+[1.048s] Installed /home/sione/ros2_hull/build/hull_serial
+[1.048s] running symlink_data
+[1.048s] symbolically linking /home/sione/ros2_hull/build/hull_serial/resource/hull_serial -> /home/sione/ros2_hull/install/hull_serial/share/ament_index/resource_index/packages
+[1.048s] symbolically linking /home/sione/ros2_hull/build/hull_serial/package.xml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial
+[1.048s] symbolically linking /home/sione/ros2_hull/build/hull_serial/launch/serial_imu.launch.py -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/launch
+[1.049s] symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+[1.049s] symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu.rviz -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+[1.049s] symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu_nav.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config

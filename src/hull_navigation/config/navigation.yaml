@@ -1,0 +1,29 @@
+gps_imu_fusion:
+  ros__parameters:
+    map_frame: "map"
+    base_link_frame: "base_link"
+    fix_topic: "/fix"
+    imu_topic: "/imu/data"
+    odom_topic: "/odometry/filtered"
+    fused_path_topic: "/fused_path"
+    publish_tf: true
+    publish_fused_path: true
+    path_min_distance: 0.5
+    min_fix_status: 0
+
+gps_navigator:
+  ros__parameters:
+    map_frame: "map"
+    odom_topic: "/odometry/filtered"
+    fix_topic: "/fix"
+    goal_topic: "/navigation/goal"
+    cancel_topic: "/navigation/cancel"
+    cmd_vel_topic: "/cmd_vel"
+    arrival_radius_m: 2.0
+    max_linear_speed: 0.5
+    max_angular_speed: 1.0
+    heading_gain: 1.5
+    slowdown_radius_m: 10.0
+    min_fix_status: 0
+    publish_cmd_vel: false
+    control_rate_hz: 10.0

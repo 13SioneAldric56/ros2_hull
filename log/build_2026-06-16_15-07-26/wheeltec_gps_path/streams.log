@@ -1,0 +1,52 @@
+[0.013s] Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sione/ros2_hull/src/wheeltec_gps_path -DCMAKE_INSTALL_PREFIX=/home/sione/ros2_hull/install/wheeltec_gps_path
+[0.029s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.148s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.167s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.169s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.173s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.180s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.189s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.220s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.255s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.258s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.344s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.369s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.411s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.422s] -- Looking for pthread.h
+[0.539s] -- Looking for pthread.h - found
+[0.540s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.622s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.623s] -- Found Threads: TRUE  
+[0.661s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[0.662s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.679s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.691s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.692s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.692s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.792s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.866s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.867s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.868s] -- Configured cppcheck include dirs: /home/sione/ros2_hull/src/wheeltec_gps_path/include
+[0.868s] -- Configured cppcheck exclude dirs and/or files: 
+[0.868s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.869s] -- Configured cpplint exclude dirs and/or files: 
+[0.869s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.870s] -- Added test 'lint_cmake' to check CMake code style
+[0.870s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.871s] -- Added test 'uncrustify' to check C / C++ code style
+[0.871s] -- Configured uncrustify additional arguments: 
+[0.872s] -- Added test 'xmllint' to check XML markup files
+[0.873s] -- Configuring done
+[0.883s] -- Generating done
+[0.887s] -- Build files have been written to: /home/sione/ros2_hull/build/wheeltec_gps_path
+[0.896s] Invoked command in '/home/sione/ros2_hull/build/wheeltec_gps_path' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/sione/ros2_hull/src/wheeltec_gps_path -DCMAKE_INSTALL_PREFIX=/home/sione/ros2_hull/install/wheeltec_gps_path
+[0.897s] Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16
+[0.951s] [ 50%] Building CXX object CMakeFiles/gps_path.dir/src/gps_path.cpp.o
+[1.231s] /home/sione/ros2_hull/src/wheeltec_gps_path/src/gps_path.cpp:5:10: fatal error: nav_msgs/msg/path.hpp: 没有那个文件或目录
+[1.231s]     5 | #include <nav_msgs/msg/path.hpp>
+[1.231s]       |          ^~~~~~~~~~~~~~~~~~~~~~~
+[1.231s] compilation terminated.
+[1.234s] gmake[2]: *** [CMakeFiles/gps_path.dir/build.make:76：CMakeFiles/gps_path.dir/src/gps_path.cpp.o] 错误 1
+[1.235s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/gps_path.dir/all] 错误 2
+[1.235s] gmake: *** [Makefile:146：all] 错误 2
+[1.238s] Invoked command in '/home/sione/ros2_hull/build/wheeltec_gps_path' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16

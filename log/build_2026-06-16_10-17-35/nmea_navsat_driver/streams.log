@@ -1,0 +1,74 @@
+[0.471s] Invoking command in '/home/sione/ros2_hull/src/nmea_navsat_driver': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmea_navsat_driver build --build-base /home/sione/ros2_hull/build/nmea_navsat_driver/build install --record /home/sione/ros2_hull/build/nmea_navsat_driver/install.log --single-version-externally-managed install_data
+[0.649s] running egg_info
+[0.649s] creating ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info
+[0.649s] writing ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/PKG-INFO
+[0.650s] writing dependency_links to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/dependency_links.txt
+[0.650s] writing entry points to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/entry_points.txt
+[0.650s] writing requirements to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/requires.txt
+[0.650s] writing top-level names to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/top_level.txt
+[0.650s] writing manifest file '../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/SOURCES.txt'
+[0.653s] reading manifest file '../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/SOURCES.txt'
+[0.653s] writing manifest file '../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/SOURCES.txt'
+[0.653s] running build
+[0.654s] running build_py
+[0.654s] creating /home/sione/ros2_hull/build/nmea_navsat_driver/build
+[0.654s] creating /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib
+[0.654s] creating /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver
+[0.654s] copying src/libnmea_navsat_driver/__init__.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver
+[0.655s] copying src/libnmea_navsat_driver/driver.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver
+[0.655s] copying src/libnmea_navsat_driver/checksum_utils.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver
+[0.655s] copying src/libnmea_navsat_driver/parser.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver
+[0.656s] creating /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/__init__.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/nmea_topic_serial_reader.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/nmea_topic_driver.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/nmea_socket_driver.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/nmea_serial_driver.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/nmea_tcpclient_driver.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.656s] copying src/libnmea_navsat_driver/nodes/gps_path.py -> /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes
+[0.657s] running install
+[0.657s] running install_lib
+[0.658s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver
+[0.658s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/__init__.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver
+[0.658s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.658s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/__init__.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.658s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/nmea_topic_serial_reader.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.658s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/nmea_topic_driver.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.658s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/nmea_socket_driver.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/nmea_serial_driver.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/nmea_tcpclient_driver.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/nodes/gps_path.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/driver.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/checksum_utils.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver
+[0.659s] copying /home/sione/ros2_hull/build/nmea_navsat_driver/build/lib/libnmea_navsat_driver/parser.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver
+[0.659s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/__init__.py to __init__.cpython-310.pyc
+[0.659s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/__init__.py to __init__.cpython-310.pyc
+[0.660s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/nmea_topic_serial_reader.py to nmea_topic_serial_reader.cpython-310.pyc
+[0.660s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/nmea_topic_driver.py to nmea_topic_driver.cpython-310.pyc
+[0.660s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/nmea_socket_driver.py to nmea_socket_driver.cpython-310.pyc
+[0.660s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/nmea_serial_driver.py to nmea_serial_driver.cpython-310.pyc
+[0.660s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/nmea_tcpclient_driver.py to nmea_tcpclient_driver.cpython-310.pyc
+[0.661s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/nodes/gps_path.py to gps_path.cpython-310.pyc
+[0.662s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/driver.py to driver.cpython-310.pyc
+[0.663s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/checksum_utils.py to checksum_utils.cpython-310.pyc
+[0.663s] byte-compiling /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/libnmea_navsat_driver/parser.py to parser.cpython-310.pyc
+[0.664s] running install_data
+[0.664s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/share/ament_index
+[0.664s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/share/ament_index/resource_index
+[0.665s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/share/ament_index/resource_index/packages
+[0.665s] copying resource/nmea_navsat_driver -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/ament_index/resource_index/packages
+[0.665s] copying package.xml -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver
+[0.665s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/launch
+[0.665s] copying launch/nmea_serial_driver.launch.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/launch
+[0.665s] creating /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/config
+[0.665s] copying config/nmea_serial_driver.yaml -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/config
+[0.665s] running install_egg_info
+[0.666s] Copying ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/nmea_navsat_driver-2.0.0-py3.10.egg-info
+[0.667s] running install_scripts
+[0.685s] Installing nmea_serial_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.685s] Installing nmea_socket_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.686s] Installing nmea_tcpclient_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.686s] Installing nmea_topic_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.686s] Installing nmea_topic_serial_reader script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.686s] writing list of installed files to '/home/sione/ros2_hull/build/nmea_navsat_driver/install.log'
+[0.710s] Invoked command in '/home/sione/ros2_hull/src/nmea_navsat_driver' returned '0': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmea_navsat_driver build --build-base /home/sione/ros2_hull/build/nmea_navsat_driver/build install --record /home/sione/ros2_hull/build/nmea_navsat_driver/install.log --single-version-externally-managed install_data

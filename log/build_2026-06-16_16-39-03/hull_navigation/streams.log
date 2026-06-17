@@ -1,0 +1,25 @@
+[0.532s] Invoking command in '/home/sione/ros2_hull/src/hull_navigation': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_navsat_driver:/home/sione/ros2_hull/install/hull_serial:/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/hull_navigation:/home/sione/ros2_hull/install/nmea_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:/home/sione/ros2_hull/install/wheeltec_gps_path PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hull_navigation build --build-base /home/sione/ros2_hull/build/hull_navigation/build install --record /home/sione/ros2_hull/build/hull_navigation/install.log --single-version-externally-managed install_data
+[0.725s] running egg_info
+[0.726s] writing ../../build/hull_navigation/hull_navigation.egg-info/PKG-INFO
+[0.727s] writing dependency_links to ../../build/hull_navigation/hull_navigation.egg-info/dependency_links.txt
+[0.727s] writing entry points to ../../build/hull_navigation/hull_navigation.egg-info/entry_points.txt
+[0.727s] writing requirements to ../../build/hull_navigation/hull_navigation.egg-info/requires.txt
+[0.727s] writing top-level names to ../../build/hull_navigation/hull_navigation.egg-info/top_level.txt
+[0.729s] reading manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+[0.729s] writing manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+[0.729s] running build
+[0.730s] running build_py
+[0.730s] copying hull_navigation/gps_imu_fusion_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+[0.730s] running install
+[0.730s] running install_lib
+[0.731s] copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/gps_imu_fusion_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+[0.731s] byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/gps_imu_fusion_node.py to gps_imu_fusion_node.cpython-310.pyc
+[0.733s] running install_data
+[0.733s] copying launch/navigation.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+[0.733s] running install_egg_info
+[0.735s] removing '/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation-0.1.0-py3.10.egg-info' (and everything under it)
+[0.735s] Copying ../../build/hull_navigation/hull_navigation.egg-info to /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation-0.1.0-py3.10.egg-info
+[0.735s] running install_scripts
+[0.755s] Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.755s] writing list of installed files to '/home/sione/ros2_hull/build/hull_navigation/install.log'
+[0.776s] Invoked command in '/home/sione/ros2_hull/src/hull_navigation' returned '0': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_navsat_driver:/home/sione/ros2_hull/install/hull_serial:/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/hull_navigation:/home/sione/ros2_hull/install/nmea_msgs:/opt/ros/humble CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:/home/sione/ros2_hull/install/wheeltec_gps_path PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hull_navigation build --build-base /home/sione/ros2_hull/build/hull_navigation/build install --record /home/sione/ros2_hull/build/hull_navigation/install.log --single-version-externally-managed install_data

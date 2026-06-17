@@ -1,0 +1,13 @@
+# Hull hardware udev rules (optional stable symlinks)
+#
+# Default launch files use /dev/ttyACM0, /dev/ttyUSB0, /dev/ttyUSB1 directly.
+# Customize ATTRS below for your USB topology, then install:
+#   bash scripts/udev/install-hull-hardware-udev.sh
+#
+# List devices:  udevadm info -a -n /dev/ttyACM0 | grep -E 'idVendor|idProduct|serial'
+
+# GPS (CDC ACM) -> /dev/hull_gps
+# Example: SUBSYSTEM=="tty", KERNEL=="ttyACM*", SYMLINK+="hull_gps", MODE="0666", GROUP="dialout"
+
+# ESP32 (GX frames on ttyUSB0) -> /dev/hull_esp32
+# Example: SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="hull_esp32", MODE="0666", GROUP="dialout"

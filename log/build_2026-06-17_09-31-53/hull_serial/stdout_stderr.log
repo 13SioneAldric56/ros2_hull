@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing hull_serial.egg-info/PKG-INFO
+writing dependency_links to hull_serial.egg-info/dependency_links.txt
+writing entry points to hull_serial.egg-info/entry_points.txt
+writing requirements to hull_serial.egg-info/requires.txt
+writing top-level names to hull_serial.egg-info/top_level.txt
+reading manifest file 'hull_serial.egg-info/SOURCES.txt'
+writing manifest file 'hull_serial.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull-serial.egg-link (link to .)
+Installing serial_imu_node script to /home/sione/ros2_hull/install/hull_serial/lib/hull_serial
+
+Installed /home/sione/ros2_hull/build/hull_serial
+running symlink_data
+symbolically linking /home/sione/ros2_hull/build/hull_serial/resource/hull_serial -> /home/sione/ros2_hull/install/hull_serial/share/ament_index/resource_index/packages
+symbolically linking /home/sione/ros2_hull/build/hull_serial/package.xml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial
+symbolically linking /home/sione/ros2_hull/build/hull_serial/launch/serial_imu.launch.py -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/launch
+symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu.rviz -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+symbolically linking /home/sione/ros2_hull/build/hull_serial/config/serial_imu_nav.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config

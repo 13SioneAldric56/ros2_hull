@@ -1,0 +1,2 @@
+Invoking command in '/home/sione/ros2_hull/build/wheeltec_gps_path': /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16
+Invoked command in '/home/sione/ros2_hull/build/wheeltec_gps_path' returned '2': /usr/bin/cmake --build /home/sione/ros2_hull/build/wheeltec_gps_path -- -j16 -l16

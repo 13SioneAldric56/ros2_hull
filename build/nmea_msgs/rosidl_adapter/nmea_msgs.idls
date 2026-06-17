@@ -1,0 +1,7 @@
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Sentence.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgga.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgsa.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgst.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gpgsv.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/GpgsvSatellite.idl
+/home/sione/ros2_hull/build/nmea_msgs/rosidl_adapter/nmea_msgs:msg/Gprmc.idl

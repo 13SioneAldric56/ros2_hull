@@ -1,0 +1,25 @@
+[0.432s] Invoking command in '/home/sione/ros2_hull/src/nmea_navsat_driver': PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmea_navsat_driver build --build-base /home/sione/ros2_hull/build/nmea_navsat_driver/build install --record /home/sione/ros2_hull/build/nmea_navsat_driver/install.log --single-version-externally-managed install_data
+[0.600s] running egg_info
+[0.600s] writing ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/PKG-INFO
+[0.601s] writing dependency_links to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/dependency_links.txt
+[0.601s] writing entry points to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/entry_points.txt
+[0.601s] writing requirements to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/requires.txt
+[0.601s] writing top-level names to ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/top_level.txt
+[0.602s] reading manifest file '../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/SOURCES.txt'
+[0.603s] writing manifest file '../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info/SOURCES.txt'
+[0.603s] running build
+[0.603s] running build_py
+[0.603s] running install
+[0.604s] running install_lib
+[0.605s] running install_data
+[0.605s] running install_egg_info
+[0.606s] removing '/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/nmea_navsat_driver-2.0.0-py3.10.egg-info' (and everything under it)
+[0.606s] Copying ../../build/nmea_navsat_driver/nmea_navsat_driver.egg-info to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/nmea_navsat_driver-2.0.0-py3.10.egg-info
+[0.607s] running install_scripts
+[0.624s] Installing nmea_serial_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.624s] Installing nmea_socket_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.624s] Installing nmea_tcpclient_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.624s] Installing nmea_topic_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.624s] Installing nmea_topic_serial_reader script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[0.625s] writing list of installed files to '/home/sione/ros2_hull/build/nmea_navsat_driver/install.log'
+[0.644s] Invoked command in '/home/sione/ros2_hull/src/nmea_navsat_driver' returned '0': PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/nmea_navsat_driver build --build-base /home/sione/ros2_hull/build/nmea_navsat_driver/build install --record /home/sione/ros2_hull/build/nmea_navsat_driver/install.log --single-version-externally-managed install_data

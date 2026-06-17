@@ -1,0 +1,1 @@
+/home/sione/ros2_hull/src/wheeltec_gps_path/scripts/bing_tile_server.py

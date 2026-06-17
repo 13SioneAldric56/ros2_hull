@@ -1,0 +1,17 @@
+[0.739s] Invoking command in '/home/sione/ros2_hull/build/hull_serial': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_serial/build --no-deps symlink_data
+[0.951s] running develop
+[1.082s] running egg_info
+[1.082s] writing hull_serial.egg-info/PKG-INFO
+[1.083s] writing dependency_links to hull_serial.egg-info/dependency_links.txt
+[1.083s] writing entry points to hull_serial.egg-info/entry_points.txt
+[1.083s] writing requirements to hull_serial.egg-info/requires.txt
+[1.083s] writing top-level names to hull_serial.egg-info/top_level.txt
+[1.085s] reading manifest file 'hull_serial.egg-info/SOURCES.txt'
+[1.086s] writing manifest file 'hull_serial.egg-info/SOURCES.txt'
+[1.088s] running build_ext
+[1.088s] Creating /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull-serial.egg-link (link to .)
+[1.090s] Installing serial_imu_node script to /home/sione/ros2_hull/install/hull_serial/lib/hull_serial
+[1.090s] 
+[1.090s] Installed /home/sione/ros2_hull/build/hull_serial
+[1.090s] running symlink_data
+[1.113s] Invoked command in '/home/sione/ros2_hull/build/hull_serial' returned '0': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_serial/build --no-deps symlink_data

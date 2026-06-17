@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000233] (-) JobUnselected: {'identifier': 'hull_serial'}
+[0.000551] (-) JobUnselected: {'identifier': 'nmea_msgs'}
+[0.000661] (-) JobUnselected: {'identifier': 'nmea_navsat_driver'}
+[0.000698] (wheeltec_gps_path) JobQueued: {'identifier': 'wheeltec_gps_path', 'dependencies': OrderedDict()}
+[0.000727] (wheeltec_gps_path) JobStarted: {'identifier': 'wheeltec_gps_path'}
+[0.008277] (wheeltec_gps_path) JobProgress: {'identifier': 'wheeltec_gps_path', 'progress': 'cmake'}
+[0.009263] (wheeltec_gps_path) JobProgress: {'identifier': 'wheeltec_gps_path', 'progress': 'build'}
+[0.009301] (wheeltec_gps_path) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sione/ros2_hull/build/wheeltec_gps_path', '--', '-j16', '-l16'], 'cwd': '/home/sione/ros2_hull/build/wheeltec_gps_path', 'env': OrderedDict([('npm_config_devdir', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/node-gyp'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/sione/fox_download'), ('CURSOR_EXTENSION_HOST_ROLE', 'agent-exec'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('PUPPETEER_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/puppeteer'), ('HTTPS_PROXY', 'http://127.0.0.1:40951'), ('no_proxy', '127.0.0.0/8,127.0.0.1,::1,localhost'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'sione'), ('LC_TIME', 'zh_CN.UTF-8'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/tcf.json","messagesFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/e48ee6102a199492b0c9964699bf011886708ba0/nls.messages.json","corruptMarkerFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"240dc842c4237de79e180860b02f2dde.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/tcf.json","_cacheRoot":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn","_resolvedLanguagePackCoreLocation":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/e48ee6102a199492b0c9964699bf011886708ba0","_corruptedFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/corrupted.info"}'), ('CARGO_TARGET_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cargo-target'), ('CCACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/ccache'), ('all_proxy', 'http://127.0.0.1:40951'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('CURSOR_RIPGREP_PATH', '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg'), ('PIP_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/pip'), ('STM32CubeMX_PATH', '/home/sione/STM32CubeMX'), ('NUGET_PACKAGES', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/nuget'), ('HOMEBREW_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/homebrew'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SOCKS_PROXY', 'socks5://127.0.0.1:46111'), ('HOME', '/home/sione'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/sione/ros2_hull'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', '127.0.0.0/8,127.0.0.1,::1,localhost'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-74b0d4d1-3.7.-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('CURSOR_ORIG_UID', '1000'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('CURSOR_WORKSPACE_LABEL', 'ros2_hull'), ('SYSTEMD_EXEC_PID', '1969'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('CONDA_PKGS_DIRS', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/conda'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COMPOSER_HOME', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/composer'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:40951'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sione'), ('FORCE_COLOR', '0'), ('ALL_PROXY', 'http://127.0.0.1:40951'), ('http_proxy', 'http://127.0.0.1:40951'), ('BUN_INSTALL_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/bun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CURSOR_LAYOUT', 'unifiedAgent'), ('GOMODCACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/go-mod'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sione'), ('CP_HOME_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cocoapods'), ('socks_proxy', 'socks5://127.0.0.1:46111'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SOCKS5_PROXY', 'socks5://127.0.0.1:46111'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('POETRY_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/poetry'), ('PATH', '/home/sione/.local/bin:/opt/ros/humble/bin:/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin:/home/sione/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sione-Redmi-Book-14:@/tmp/.ICE-unix/1771,unix/sione-Redmi-Book-14:/tmp/.ICE-unix/1771'), ('YARN_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/yarn'), ('UV_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/uv'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('VSCODE_PROCESS_TITLE', 'extension-host (agent-exec) ros2_hull [11-82]'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3715501e_3196_429b_885a_ed042fb15540'), ('PLAYWRIGHT_BROWSERS_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/playwright'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('BUNDLE_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/bundle'), ('GDK_BACKEND', 'wayland'), ('AGENT_TRANSCRIPTS', '/home/sione/.cursor/projects/home-sione-ros2-hull/agent-transcripts'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_CACHE_DIRECTORY', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/nx'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RD3CQ3'), ('LS_COLORS', ''), ('CYPRESS_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cypress'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('PNPM_STORE_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/pnpm-store'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CURSOR_CLI_MODE', 'local'), ('SHELL', '/bin/bash'), ('CURSOR_SANDBOX', 'native'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOCACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/go-build'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('CURSOR_CLI', 'ELECTRON_RUN_AS_NODE=1 "/usr/share/cursor/bin/../cursor" "/usr/share/cursor/bin/../resources/app/out/cli.js"'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_HTTP_PROXY', 'http://127.0.0.1:40951'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('socks5_proxy', 'socks5://127.0.0.1:46111'), ('QT_IM_MODULE', 'ibus'), ('NPM_CONFIG_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/npm'), ('PWD', '/home/sione/ros2_hull/build/wheeltec_gps_path'), ('VSCODE_CLI', '1'), ('GRADLE_USER_HOME', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/gradle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sione/.config/Cursor/CachedData/e48ee6102a199492b0c9964699bf011886708ba0'), ('CURSOR_ORIG_GID', '1000'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/sione/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GIT_HTTPS_PROXY', 'http://127.0.0.1:40951'), ('CURSOR_CONVERSATION_ID', '30f2cb7e-ef87-4b9d-90a5-51ab57f199ff'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:40951'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('TURBO_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/turbo'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('__CURSOR_SANDBOX_ENV_RESTORE', "builtin export HTTP_PROXY='http://127.0.0.1:40951'; builtin export HTTPS_PROXY='http://127.0.0.1:40951'; builtin export http_proxy='http://127.0.0.1:40951'; builtin export https_proxy='http://127.0.0.1:40951'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:40951'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:40951'; builtin export SOCKS_PROXY='socks5://127.0.0.1:46111'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:46111'; builtin export socks_proxy='socks5://127.0.0.1:46111'; builtin export socks5_proxy='socks5://127.0.0.1:46111'; builtin export ALL_PROXY='http://127.0.0.1:40951'; builtin export all_proxy='http://127.0.0.1:40951'; builtin export NO_PROXY='127.0.0.0/8,127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.0/8,127.0.0.1,::1,localhost'"), ('_ZO_DOCTOR', '0'), ('VTE_VERSION', '6800'), ('GEM_SPEC_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/gem-specs'), ('CURSOR_SANDBOX_LANDLOCK_STATUS', 'fully_enforced'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '23108'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.038211] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099785] (-) TimerEvent: {}
+[0.151162] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.170825] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.172841] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.177142] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.185758] (wheeltec_gps_path) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.195569] (wheeltec_gps_path) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199853] (-) TimerEvent: {}
+[0.223143] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.234430] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.253779] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.255111] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299995] (-) TimerEvent: {}
+[0.339267] (wheeltec_gps_path) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.366790] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.367099] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.379794] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.382585] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.383644] (wheeltec_gps_path) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.400091] (-) TimerEvent: {}
+[0.452321] (wheeltec_gps_path) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500200] (-) TimerEvent: {}
+[0.518920] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.519813] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.519983] (wheeltec_gps_path) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/sione/ros2_hull/src/wheeltec_gps_path/include\n'}
+[0.520083] (wheeltec_gps_path) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.520820] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.520971] (wheeltec_gps_path) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.521348] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.521995] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.522544] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.523312] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.523446] (wheeltec_gps_path) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.523731] (wheeltec_gps_path) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.524798] (wheeltec_gps_path) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.538359] (wheeltec_gps_path) StdoutLine: {'line': b'-- Generating done\n'}
+[0.542875] (wheeltec_gps_path) StdoutLine: {'line': b'-- Build files have been written to: /home/sione/ros2_hull/build/wheeltec_gps_path\n'}
+[0.583420] (wheeltec_gps_path) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/gps_path.dir/src/gps_path.cpp.o\n'}
+[0.600327] (-) TimerEvent: {}
+[0.700560] (-) TimerEvent: {}
+[0.800796] (-) TimerEvent: {}
+[0.901067] (-) TimerEvent: {}
+[1.001270] (-) TimerEvent: {}
+[1.101482] (-) TimerEvent: {}
+[1.201692] (-) TimerEvent: {}
+[1.302024] (-) TimerEvent: {}
+[1.402315] (-) TimerEvent: {}
+[1.502561] (-) TimerEvent: {}
+[1.602834] (-) TimerEvent: {}
+[1.703060] (-) TimerEvent: {}
+[1.803305] (-) TimerEvent: {}
+[1.903534] (-) TimerEvent: {}
+[2.003747] (-) TimerEvent: {}
+[2.103983] (-) TimerEvent: {}
+[2.204233] (-) TimerEvent: {}
+[2.304621] (-) TimerEvent: {}
+[2.404854] (-) TimerEvent: {}
+[2.505138] (-) TimerEvent: {}
+[2.605355] (-) TimerEvent: {}
+[2.705593] (-) TimerEvent: {}
+[2.805844] (-) TimerEvent: {}
+[2.906072] (-) TimerEvent: {}
+[3.006313] (-) TimerEvent: {}
+[3.106575] (-) TimerEvent: {}
+[3.206801] (-) TimerEvent: {}
+[3.307002] (-) TimerEvent: {}
+[3.407197] (-) TimerEvent: {}
+[3.507420] (-) TimerEvent: {}
+[3.607646] (-) TimerEvent: {}
+[3.707874] (-) TimerEvent: {}
+[3.808153] (-) TimerEvent: {}
+[3.908423] (-) TimerEvent: {}
+[4.008640] (-) TimerEvent: {}
+[4.108913] (-) TimerEvent: {}
+[4.209168] (-) TimerEvent: {}
+[4.309390] (-) TimerEvent: {}
+[4.409636] (-) TimerEvent: {}
+[4.509889] (-) TimerEvent: {}
+[4.610104] (-) TimerEvent: {}
+[4.710343] (-) TimerEvent: {}
+[4.810557] (-) TimerEvent: {}
+[4.910775] (-) TimerEvent: {}
+[5.010990] (-) TimerEvent: {}
+[5.111221] (-) TimerEvent: {}
+[5.211428] (-) TimerEvent: {}
+[5.311650] (-) TimerEvent: {}
+[5.411858] (-) TimerEvent: {}
+[5.512055] (-) TimerEvent: {}
+[5.612260] (-) TimerEvent: {}
+[5.712485] (-) TimerEvent: {}
+[5.812700] (-) TimerEvent: {}
+[5.913042] (-) TimerEvent: {}
+[6.013250] (-) TimerEvent: {}
+[6.113449] (-) TimerEvent: {}
+[6.213724] (-) TimerEvent: {}
+[6.313999] (-) TimerEvent: {}
+[6.414226] (-) TimerEvent: {}
+[6.514462] (-) TimerEvent: {}
+[6.614701] (-) TimerEvent: {}
+[6.714958] (-) TimerEvent: {}
+[6.815210] (-) TimerEvent: {}
+[6.915418] (-) TimerEvent: {}
+[7.015611] (-) TimerEvent: {}
+[7.115799] (-) TimerEvent: {}
+[7.216004] (-) TimerEvent: {}
+[7.316292] (-) TimerEvent: {}
+[7.416694] (-) TimerEvent: {}
+[7.516917] (-) TimerEvent: {}
+[7.617191] (-) TimerEvent: {}
+[7.717465] (-) TimerEvent: {}
+[7.817740] (-) TimerEvent: {}
+[7.915933] (wheeltec_gps_path) StdoutLine: {'line': b'[100%] Linking CXX executable gps_path\n'}
+[7.917875] (-) TimerEvent: {}
+[8.018084] (-) TimerEvent: {}
+[8.118278] (-) TimerEvent: {}
+[8.218591] (-) TimerEvent: {}
+[8.318780] (-) TimerEvent: {}
+[8.325097] (wheeltec_gps_path) StdoutLine: {'line': b'[100%] Built target gps_path\n'}
+[8.337814] (wheeltec_gps_path) CommandEnded: {'returncode': 0}
+[8.339659] (wheeltec_gps_path) JobProgress: {'identifier': 'wheeltec_gps_path', 'progress': 'install'}
+[8.347594] (wheeltec_gps_path) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sione/ros2_hull/build/wheeltec_gps_path'], 'cwd': '/home/sione/ros2_hull/build/wheeltec_gps_path', 'env': OrderedDict([('npm_config_devdir', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/node-gyp'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/sione/fox_download'), ('CURSOR_EXTENSION_HOST_ROLE', 'agent-exec'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('PUPPETEER_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/puppeteer'), ('HTTPS_PROXY', 'http://127.0.0.1:40951'), ('no_proxy', '127.0.0.0/8,127.0.0.1,::1,localhost'), ('LANGUAGE', 'zh_CN:zh:en_US:en'), ('USER', 'sione'), ('LC_TIME', 'zh_CN.UTF-8'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/cursor/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/tcf.json","messagesFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/e48ee6102a199492b0c9964699bf011886708ba0/nls.messages.json","corruptMarkerFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"240dc842c4237de79e180860b02f2dde.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/tcf.json","_cacheRoot":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn","_resolvedLanguagePackCoreLocation":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/e48ee6102a199492b0c9964699bf011886708ba0","_corruptedFile":"/home/sione/.config/Cursor/clp/240dc842c4237de79e180860b02f2dde.zh-cn/corrupted.info"}'), ('CARGO_TARGET_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cargo-target'), ('CCACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/ccache'), ('all_proxy', 'http://127.0.0.1:40951'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'wayland'), ('CURSOR_RIPGREP_PATH', '/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/rg'), ('PIP_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/pip'), ('STM32CubeMX_PATH', '/home/sione/STM32CubeMX'), ('NUGET_PACKAGES', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/nuget'), ('HOMEBREW_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/homebrew'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SOCKS_PROXY', 'socks5://127.0.0.1:46111'), ('HOME', '/home/sione'), ('CHROME_DESKTOP', 'cursor.desktop'), ('OLDPWD', '/home/sione/ros2_hull'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', '127.0.0.0/8,127.0.0.1,::1,localhost'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-74b0d4d1-3.7.-main.sock'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('CURSOR_ORIG_UID', '1000'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('CURSOR_WORKSPACE_LABEL', 'ros2_hull'), ('SYSTEMD_EXEC_PID', '1969'), ('IM_CONFIG_CHECK_ENV', '1'), ('NO_COLOR', '1'), ('CONDA_PKGS_DIRS', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/conda'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COMPOSER_HOME', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/composer'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('https_proxy', 'http://127.0.0.1:40951'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sione'), ('FORCE_COLOR', '0'), ('ALL_PROXY', 'http://127.0.0.1:40951'), ('http_proxy', 'http://127.0.0.1:40951'), ('BUN_INSTALL_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/bun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CURSOR_LAYOUT', 'unifiedAgent'), ('GOMODCACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/go-mod'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'sione'), ('CP_HOME_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cocoapods'), ('socks_proxy', 'socks5://127.0.0.1:46111'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SOCKS5_PROXY', 'socks5://127.0.0.1:46111'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('POETRY_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/poetry'), ('PATH', '/home/sione/.local/bin:/opt/ros/humble/bin:/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin:/home/sione/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/sione-Redmi-Book-14:@/tmp/.ICE-unix/1771,unix/sione-Redmi-Book-14:/tmp/.ICE-unix/1771'), ('YARN_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/yarn'), ('UV_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/uv'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('VSCODE_PROCESS_TITLE', 'extension-host (agent-exec) ros2_hull [11-82]'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3715501e_3196_429b_885a_ed042fb15540'), ('PLAYWRIGHT_BROWSERS_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/playwright'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('BUNDLE_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/bundle'), ('GDK_BACKEND', 'wayland'), ('AGENT_TRANSCRIPTS', '/home/sione/.cursor/projects/home-sione-ros2-hull/agent-transcripts'), ('CURSOR_AGENT', '1'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_CACHE_DIRECTORY', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/nx'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RD3CQ3'), ('LS_COLORS', ''), ('CYPRESS_CACHE_FOLDER', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/cypress'), ('GNOME_TERMINAL_SERVICE', ':1.154'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('PNPM_STORE_PATH', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/pnpm-store'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CURSOR_CLI_MODE', 'local'), ('SHELL', '/bin/bash'), ('CURSOR_SANDBOX', 'native'), ('LC_NAME', 'zh_CN.UTF-8'), ('GOCACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/go-build'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('CURSOR_CLI', 'ELECTRON_RUN_AS_NODE=1 "/usr/share/cursor/bin/../cursor" "/usr/share/cursor/bin/../resources/app/out/cli.js"'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_HTTP_PROXY', 'http://127.0.0.1:40951'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('socks5_proxy', 'socks5://127.0.0.1:46111'), ('QT_IM_MODULE', 'ibus'), ('NPM_CONFIG_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/npm'), ('PWD', '/home/sione/ros2_hull/build/wheeltec_gps_path'), ('VSCODE_CLI', '1'), ('GRADLE_USER_HOME', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/gradle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/sione/.config/Cursor/CachedData/e48ee6102a199492b0c9964699bf011886708ba0'), ('CURSOR_ORIG_GID', '1000'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/sione/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('GIT_HTTPS_PROXY', 'http://127.0.0.1:40951'), ('CURSOR_CONVERSATION_ID', '30f2cb7e-ef87-4b9d-90a5-51ab57f199ff'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:40951'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('TURBO_CACHE_DIR', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/turbo'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('__CURSOR_SANDBOX_ENV_RESTORE', "builtin export HTTP_PROXY='http://127.0.0.1:40951'; builtin export HTTPS_PROXY='http://127.0.0.1:40951'; builtin export http_proxy='http://127.0.0.1:40951'; builtin export https_proxy='http://127.0.0.1:40951'; builtin export GIT_HTTP_PROXY='http://127.0.0.1:40951'; builtin export GIT_HTTPS_PROXY='http://127.0.0.1:40951'; builtin export SOCKS_PROXY='socks5://127.0.0.1:46111'; builtin export SOCKS5_PROXY='socks5://127.0.0.1:46111'; builtin export socks_proxy='socks5://127.0.0.1:46111'; builtin export socks5_proxy='socks5://127.0.0.1:46111'; builtin export ALL_PROXY='http://127.0.0.1:40951'; builtin export all_proxy='http://127.0.0.1:40951'; builtin export NO_PROXY='127.0.0.0/8,127.0.0.1,::1,localhost'; builtin export no_proxy='127.0.0.0/8,127.0.0.1,::1,localhost'"), ('_ZO_DOCTOR', '0'), ('VTE_VERSION', '6800'), ('GEM_SPEC_CACHE', '/tmp/cursor-sandbox-cache/9c4201ed962f614ada2f1dae1decbd1b/gem-specs'), ('CURSOR_SANDBOX_LANDLOCK_STATUS', 'fully_enforced'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('VSCODE_PID', '23108'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.357435] (wheeltec_gps_path) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.357770] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/lib/wheeltec_gps_path/gps_path\n'}
+[8.359968] (wheeltec_gps_path) StdoutLine: {'line': b'-- Set runtime path of "/home/sione/ros2_hull/install/wheeltec_gps_path/lib/wheeltec_gps_path/gps_path" to ""\n'}
+[8.360148] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch\n'}
+[8.360291] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch/gps_path.launch.py\n'}
+[8.360393] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/launch/mapviz_path.launch.py\n'}
+[8.360488] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/package_run_dependencies/wheeltec_gps_path\n'}
+[8.360627] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/parent_prefix_path/wheeltec_gps_path\n'}
+[8.360745] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/ament_prefix_path.sh\n'}
+[8.360940] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/ament_prefix_path.dsv\n'}
+[8.361070] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/path.sh\n'}
+[8.361368] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/environment/path.dsv\n'}
+[8.361558] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.bash\n'}
+[8.361723] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.sh\n'}
+[8.361887] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.zsh\n'}
+[8.362033] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/local_setup.dsv\n'}
+[8.362274] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/package.dsv\n'}
+[8.362408] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/ament_index/resource_index/packages/wheeltec_gps_path\n'}
+[8.362518] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/cmake/wheeltec_gps_pathConfig.cmake\n'}
+[8.362630] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/cmake/wheeltec_gps_pathConfig-version.cmake\n'}
+[8.362727] (wheeltec_gps_path) StdoutLine: {'line': b'-- Installing: /home/sione/ros2_hull/install/wheeltec_gps_path/share/wheeltec_gps_path/package.xml\n'}
+[8.364090] (wheeltec_gps_path) CommandEnded: {'returncode': 0}
+[8.380604] (wheeltec_gps_path) JobEnded: {'identifier': 'wheeltec_gps_path', 'rc': 0}
+[8.381292] (-) EventReactorShutdown: {}

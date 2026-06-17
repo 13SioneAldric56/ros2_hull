@@ -1,0 +1,14 @@
+# Hull hardware serial port assignments
+#
+# /dev/ttyACM0  - GPS module (NMEA, 9600 baud)
+# /dev/ttyUSB0  - ESP32 USB COM (GX binary frames -> /imu/data, 115200 baud)
+#
+# Navigation stack reads GPS from ttyACM0 and IMU from ESP32 on ttyUSB0.
+
+gps:
+  port: "/dev/ttyACM0"
+  baud: 9600
+
+esp32:
+  port: "/dev/ttyUSB0"
+  baud: 115200

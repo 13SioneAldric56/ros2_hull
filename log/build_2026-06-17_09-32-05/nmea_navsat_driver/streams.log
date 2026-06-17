@@ -1,0 +1,27 @@
+[0.734s] Invoking command in '/home/sione/ros2_hull/build/nmea_navsat_driver': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/nmea_navsat_driver/build --no-deps symlink_data --force
+[0.940s] running develop
+[1.059s] running egg_info
+[1.059s] creating src/nmea_navsat_driver.egg-info
+[1.059s] writing src/nmea_navsat_driver.egg-info/PKG-INFO
+[1.059s] writing dependency_links to src/nmea_navsat_driver.egg-info/dependency_links.txt
+[1.060s] writing entry points to src/nmea_navsat_driver.egg-info/entry_points.txt
+[1.060s] writing requirements to src/nmea_navsat_driver.egg-info/requires.txt
+[1.060s] writing top-level names to src/nmea_navsat_driver.egg-info/top_level.txt
+[1.060s] writing manifest file 'src/nmea_navsat_driver.egg-info/SOURCES.txt'
+[1.061s] reading manifest file 'src/nmea_navsat_driver.egg-info/SOURCES.txt'
+[1.062s] writing manifest file 'src/nmea_navsat_driver.egg-info/SOURCES.txt'
+[1.063s] running build_ext
+[1.063s] Creating /home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages/nmea-navsat-driver.egg-link (link to src)
+[1.064s] Installing nmea_serial_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[1.065s] Installing nmea_socket_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[1.065s] Installing nmea_tcpclient_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[1.065s] Installing nmea_topic_driver script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[1.065s] Installing nmea_topic_serial_reader script to /home/sione/ros2_hull/install/nmea_navsat_driver/lib/nmea_navsat_driver
+[1.065s] 
+[1.065s] Installed /home/sione/ros2_hull/build/nmea_navsat_driver/src
+[1.065s] running symlink_data
+[1.065s] symbolically linking /home/sione/ros2_hull/build/nmea_navsat_driver/resource/nmea_navsat_driver -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/ament_index/resource_index/packages
+[1.065s] symbolically linking /home/sione/ros2_hull/build/nmea_navsat_driver/package.xml -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver
+[1.066s] symbolically linking /home/sione/ros2_hull/build/nmea_navsat_driver/launch/nmea_serial_driver.launch.py -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/launch
+[1.066s] symbolically linking /home/sione/ros2_hull/build/nmea_navsat_driver/config/nmea_serial_driver.yaml -> /home/sione/ros2_hull/install/nmea_navsat_driver/share/nmea_navsat_driver/config
+[1.086s] Invoked command in '/home/sione/ros2_hull/build/nmea_navsat_driver' returned '0': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/nmea_navsat_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/nmea_navsat_driver/build --no-deps symlink_data --force

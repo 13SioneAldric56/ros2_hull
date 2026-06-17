@@ -1,0 +1,22 @@
+[0.476s] Invoking command in '/home/sione/ros2_hull/build/hull_navigation': PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_navigation/build --no-deps symlink_data --force
+[0.676s] running develop
+[0.781s] running egg_info
+[0.781s] writing hull_navigation.egg-info/PKG-INFO
+[0.782s] writing dependency_links to hull_navigation.egg-info/dependency_links.txt
+[0.782s] writing entry points to hull_navigation.egg-info/entry_points.txt
+[0.782s] writing requirements to hull_navigation.egg-info/requires.txt
+[0.782s] writing top-level names to hull_navigation.egg-info/top_level.txt
+[0.783s] reading manifest file 'hull_navigation.egg-info/SOURCES.txt'
+[0.784s] writing manifest file 'hull_navigation.egg-info/SOURCES.txt'
+[0.785s] running build_ext
+[0.785s] Creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull-navigation.egg-link (link to .)
+[0.786s] Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.786s] 
+[0.786s] Installed /home/sione/ros2_hull/build/hull_navigation
+[0.786s] running symlink_data
+[0.786s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/resource/hull_navigation -> /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+[0.786s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/package.xml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation
+[0.786s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/navigation.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+[0.786s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/navigation.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+[0.787s] error: [Errno 2] No such file or directory: '/home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config/hardware_ports.yaml'
+[0.808s] Invoked command in '/home/sione/ros2_hull/build/hull_navigation' returned '1': PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_navigation/build --no-deps symlink_data --force

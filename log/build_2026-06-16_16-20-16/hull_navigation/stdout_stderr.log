@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/hull_navigation/hull_navigation.egg-info
+writing ../../build/hull_navigation/hull_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/hull_navigation/hull_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/hull_navigation/hull_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/hull_navigation/hull_navigation.egg-info/requires.txt
+writing top-level names to ../../build/hull_navigation/hull_navigation.egg-info/top_level.txt
+writing manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+reading manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sione/ros2_hull/build/hull_navigation/build
+creating /home/sione/ros2_hull/build/hull_navigation/build/lib
+creating /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/__init__.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+running install
+running install_lib
+creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/__init__.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/sione/ros2_hull/install/hull_navigation/share/ament_index
+creating /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index
+creating /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+copying resource/hull_navigation -> /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation
+creating /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+error: can't copy 'launch/navigation.launch.py': doesn't exist or not a regular file

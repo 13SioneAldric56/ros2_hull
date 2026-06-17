@@ -1,0 +1,1 @@
+/home/sione/ros2_hull/build/hull_navigation/launch/navigation.launch.py
