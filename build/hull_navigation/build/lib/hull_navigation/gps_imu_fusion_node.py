@@ -3,73 +3,15 @@
 
 from __future__ import annotations
 
-import math
-
 import rclpy
-from geometry_msgs.msg import Point, Pose, Quaternion, TransformStamped, Twist
-from nav_msgs.msg import Odometry
+from geometry_msgs.msg import Point, Pose, PoseStamped, Quaternion, TransformStamped
+from nav_msgs.msg import Odometry, Path
 from rclpy.node import Node
 from sensor_msgs.msg import Imu, NavSatFix
 from std_msgs.msg import Header
 from tf2_ros import TransformBroadcaster
 
-EARTH_RADIUS_KM = 6378.137
-
-
-def _rad(deg: float) -> float:
-    return deg * math.pi / 180.0
-
-
-def lla_to_local_m(
-    origin_lat: float,
-    origin_lon: float,
-    origin_alt: float,
-    lat: float,
-    lon: float,
-    alt: float,
-) -> tuple[float, float, float]:
-    """Same local projection as wheeltec_gps_path/src/gps_path.cpp."""
-    rad_lat1 = _rad(origin_lat)
-    rad_lon1 = _rad(origin_lon)
-    rad_lat2 = _rad(lat)
-    rad_lon2 = _rad(lon)
-
-    delta_lat = rad_lat2 - rad_lat1
-    if delta_lat > 0.0:
-        x = -2.0 * math.asin(
-            math.sqrt(
-                math.sin(delta_lat / 2.0) ** 2
-                + math.cos(rad_lat1) * math.cos(rad_lat2) * math.sin(0.0) ** 2
-            )
-        )
-    else:
-        x = 2.0 * math.asin(
-            math.sqrt(
-                math.sin(delta_lat / 2.0) ** 2
-                + math.cos(rad_lat1) * math.cos(rad_lat2) * math.sin(0.0) ** 2
-            )
-        )
-    x *= EARTH_RADIUS_KM * 1000.0
-
-    delta_long = rad_lon2 - rad_lon1
-    if delta_long > 0.0:
-        y = 2.0 * math.asin(
-            math.sqrt(
-                math.sin(0.0) ** 2
-                + math.cos(rad_lat2) * math.cos(rad_lat2) * math.sin(delta_long / 2.0) ** 2
-            )
-        )
-    else:
-        y = -2.0 * math.asin(
-            math.sqrt(
-                math.sin(0.0) ** 2
-                + math.cos(rad_lat2) * math.cos(rad_lat2) * math.sin(delta_long / 2.0) ** 2
-            )
-        )
-    y *= EARTH_RADIUS_KM * 1000.0
-
-    z = alt - origin_alt
-    return x, y, z
+from hull_navigation.geo_utils import lla_to_local_m
 
 
 class GpsImuFusionNode(Node):
@@ -81,12 +23,17 @@ class GpsImuFusionNode(Node):
         self.declare_parameter('fix_topic', '/fix')
         self.declare_parameter('imu_topic', '/imu/data')
         self.declare_parameter('odom_topic', '/odometry/filtered')
+        self.declare_parameter('fused_path_topic', '/fused_path')
         self.declare_parameter('publish_tf', True)
+        self.declare_parameter('publish_fused_path', True)
+        self.declare_parameter('path_min_distance', 0.5)
         self.declare_parameter('min_fix_status', 0)
 
         self.map_frame = self.get_parameter('map_frame').value
         self.base_link_frame = self.get_parameter('base_link_frame').value
         self.publish_tf = bool(self.get_parameter('publish_tf').value)
+        self.publish_fused_path = bool(self.get_parameter('publish_fused_path').value)
+        self.path_min_distance = float(self.get_parameter('path_min_distance').value)
         self.min_fix_status = int(self.get_parameter('min_fix_status').value)
 
         self._origin_lat: float | None = None
@@ -98,12 +45,17 @@ class GpsImuFusionNode(Node):
         self._has_imu = False
         self._warned_no_imu = False
         self._last_imu_stamp = self.get_clock().now().to_msg()
+        self._fused_path = Path()
+        self._fused_path.header.frame_id = self.map_frame
+        self._last_path_point: Point | None = None
 
         odom_topic = self.get_parameter('odom_topic').value
+        fused_path_topic = self.get_parameter('fused_path_topic').value
         fix_topic = self.get_parameter('fix_topic').value
         imu_topic = self.get_parameter('imu_topic').value
 
         self.odom_pub = self.create_publisher(Odometry, odom_topic, 10)
+        self.path_pub = self.create_publisher(Path, fused_path_topic, 10)
         self.tf_broadcaster = TransformBroadcaster(self)
         self.create_subscription(NavSatFix, fix_topic, self._fix_callback, 10)
         self.create_subscription(Imu, imu_topic, self._imu_callback, 50)
@@ -111,7 +63,8 @@ class GpsImuFusionNode(Node):
 
         self.get_logger().info(
             f'Fusing {fix_topic} + {imu_topic} -> {odom_topic}, '
-            f'TF {self.map_frame} -> {self.base_link_frame}'
+            f'TF {self.map_frame} -> {self.base_link_frame}, '
+            f'path {fused_path_topic}'
         )
 
     def _fix_callback(self, msg: NavSatFix) -> None:
@@ -172,7 +125,12 @@ class GpsImuFusionNode(Node):
         odom.header = Header(stamp=stamp, frame_id=self.map_frame)
         odom.child_frame_id = self.base_link_frame
         odom.pose.pose = Pose(position=self._position, orientation=self._orientation)
+        if not self._has_imu:
+            odom.pose.covariance[35] = -1.0
         self.odom_pub.publish(odom)
+
+        if self.publish_fused_path:
+            self._append_path(stamp)
 
         if not self.publish_tf:
             return
@@ -186,6 +144,32 @@ class GpsImuFusionNode(Node):
         transform.transform.translation.z = self._position.z
         transform.transform.rotation = self._orientation
         self.tf_broadcaster.sendTransform(transform)
+
+    def _append_path(self, stamp) -> None:
+        if self._last_path_point is None:
+            append = True
+        else:
+            dx = self._position.x - self._last_path_point.x
+            dy = self._position.y - self._last_path_point.y
+            dz = self._position.z - self._last_path_point.z
+            append = (dx * dx + dy * dy + dz * dz) >= self.path_min_distance ** 2
+
+        if not append:
+            return
+
+        pose = PoseStamped()
+        pose.header.stamp = stamp
+        pose.header.frame_id = self.map_frame
+        pose.pose.position = self._position
+        pose.pose.orientation = self._orientation
+        self._fused_path.poses.append(pose)
+        self._fused_path.header.stamp = stamp
+        self._last_path_point = Point(
+            x=self._position.x,
+            y=self._position.y,
+            z=self._position.z,
+        )
+        self.path_pub.publish(self._fused_path)
 
 
 def main(args=None) -> None:

@@ -1,0 +1,32 @@
+[0.477s] Invoking command in '/home/sione/ros2_hull/build/hull_navigation': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_navsat_driver:/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/nmea_msgs:/home/sione/ros2_hull/install/hull_serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/build/nmea_navsat_driver/src:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_navigation/build --no-deps symlink_data --force
+[0.678s] running develop
+[0.805s] running egg_info
+[0.805s] writing hull_navigation.egg-info/PKG-INFO
+[0.805s] writing dependency_links to hull_navigation.egg-info/dependency_links.txt
+[0.805s] writing entry points to hull_navigation.egg-info/entry_points.txt
+[0.805s] writing requirements to hull_navigation.egg-info/requires.txt
+[0.806s] writing top-level names to hull_navigation.egg-info/top_level.txt
+[0.807s] reading manifest file 'hull_navigation.egg-info/SOURCES.txt'
+[0.807s] writing manifest file 'hull_navigation.egg-info/SOURCES.txt'
+[0.808s] running build_ext
+[0.808s] Creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull-navigation.egg-link (link to .)
+[0.809s] Installing cmd_vel_stub_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] Installing gps_goal_bridge_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] Installing gps_navigator_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] Installing gps_velocity_adapter_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] Installing send_nav_goal script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+[0.809s] 
+[0.809s] Installed /home/sione/ros2_hull/build/hull_navigation
+[0.809s] running symlink_data
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/resource/hull_navigation -> /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/package.xml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/navigation.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/nav2_open_water.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/localization.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/hardware_ports.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/navigation.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/nav2_params.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/ekf.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+[0.810s] symbolically linking /home/sione/ros2_hull/build/hull_navigation/scripts/send_goal.sh -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/scripts
+[0.838s] Invoked command in '/home/sione/ros2_hull/build/hull_navigation' returned '0': AMENT_PREFIX_PATH=/home/sione/ros2_hull/install/nmea_navsat_driver:/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/nmea_msgs:/home/sione/ros2_hull/install/hull_serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sione/ros2_hull/install/wheeltec_gps_path:/home/sione/ros2_hull/install/nmea_msgs LD_LIBRARY_PATH=/home/sione/ros2_hull/install/nmea_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/sione/ros2_hull/build/hull_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages:/home/sione/ros2_hull/build/nmea_navsat_driver/src:/home/sione/ros2_hull/install/nmea_navsat_driver/lib/python3.10/site-packages:/home/sione/ros2_hull/install/nmea_msgs/local/lib/python3.10/dist-packages:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sione/ros2_hull/build/hull_navigation/build --no-deps symlink_data --force

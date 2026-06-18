@@ -2,8 +2,8 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>hull_navigation</name>
-  <version>0.1.0</version>
-  <description>GPS + IMU fusion for hull navigation</description>
+  <version>0.2.0</version>
+  <description>GPS + IMU localization and Nav2 open-water navigation for hull</description>
   <maintainer email="user@todo.todo">user</maintainer>
   <license>MIT</license>
 
@@ -13,13 +13,30 @@
   <depend>sensor_msgs</depend>
   <depend>nav_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
   <depend>tf2_ros</depend>
+  <depend>nav2_msgs</depend>
+  <depend>action_msgs</depend>
+  <depend>robot_localization</depend>
 
   <exec_depend>hull_serial</exec_depend>
   <exec_depend>nmea_navsat_driver</exec_depend>
   <exec_depend>wheeltec_gps_path</exec_depend>
   <exec_depend>mapviz</exec_depend>
   <exec_depend>swri_transform_util</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_common</exec_depend>
+  <exec_depend>nav2_controller</exec_depend>
+  <exec_depend>nav2_planner</exec_depend>
+  <exec_depend>nav2_behaviors</exec_depend>
+  <exec_depend>nav2_bt_navigator</exec_depend>
+  <exec_depend>nav2_waypoint_follower</exec_depend>
+  <exec_depend>nav2_velocity_smoother</exec_depend>
+  <exec_depend>nav2_smoother</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>nav2_costmap_2d</exec_depend>
+  <exec_depend>nav2_regulated_pure_pursuit_controller</exec_depend>
+  <exec_depend>nav2_navfn_planner</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

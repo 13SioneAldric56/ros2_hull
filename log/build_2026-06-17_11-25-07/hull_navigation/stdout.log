@@ -1,0 +1,58 @@
+running develop
+Removing /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull-navigation.egg-link (link to .)
+running egg_info
+writing ../../build/hull_navigation/hull_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/hull_navigation/hull_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/hull_navigation/hull_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/hull_navigation/hull_navigation.egg-info/requires.txt
+writing top-level names to ../../build/hull_navigation/hull_navigation.egg-info/top_level.txt
+reading manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hull_navigation/cmd_vel_stub_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/send_nav_goal.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/gps_goal_bridge_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/gps_velocity_adapter_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/geo_utils.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/gps_navigator_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+copying hull_navigation/gps_imu_fusion_node.py -> /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation
+running install
+running install_lib
+creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/cmd_vel_stub_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/__init__.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/send_nav_goal.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/gps_goal_bridge_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/gps_velocity_adapter_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/geo_utils.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/gps_navigator_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+copying /home/sione/ros2_hull/build/hull_navigation/build/lib/hull_navigation/gps_imu_fusion_node.py -> /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/cmd_vel_stub_node.py to cmd_vel_stub_node.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/send_nav_goal.py to send_nav_goal.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/gps_goal_bridge_node.py to gps_goal_bridge_node.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/gps_velocity_adapter_node.py to gps_velocity_adapter_node.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/geo_utils.py to geo_utils.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/gps_navigator_node.py to gps_navigator_node.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation/gps_imu_fusion_node.py to gps_imu_fusion_node.cpython-310.pyc
+running install_data
+copying resource/hull_navigation -> /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation
+copying launch/navigation.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+copying launch/nav2_open_water.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+copying launch/localization.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+copying config/hardware_ports.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+copying config/navigation.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+copying config/nav2_params.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+copying config/ekf.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+running install_egg_info
+Copying ../../build/hull_navigation/hull_navigation.egg-info to /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation-0.2.0-py3.10.egg-info
+running install_scripts
+Installing cmd_vel_stub_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_goal_bridge_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_navigator_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_velocity_adapter_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing send_nav_goal script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+writing list of installed files to '/home/sione/ros2_hull/build/hull_navigation/install.log'

@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/hull_navigation/hull_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/hull_navigation/hull_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/hull_navigation/hull_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/hull_navigation/hull_navigation.egg-info/requires.txt
+writing top-level names to ../../build/hull_navigation/hull_navigation.egg-info/top_level.txt
+reading manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/hull_navigation/hull_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying config/ekf.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+copying scripts/send_goal.sh -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/scripts
+running install_egg_info
+removing '/home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation-0.2.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/hull_navigation/hull_navigation.egg-info to /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull_navigation-0.2.0-py3.10.egg-info
+running install_scripts
+Installing cmd_vel_stub_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_goal_bridge_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_navigator_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_velocity_adapter_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing send_nav_goal script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+writing list of installed files to '/home/sione/ros2_hull/build/hull_navigation/install.log'

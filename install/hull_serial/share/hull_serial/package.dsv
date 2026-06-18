@@ -4,6 +4,3 @@ source;share/hull_serial/hook/pythonpath.sh
 source;share/hull_serial/hook/ament_prefix_path.ps1
 source;share/hull_serial/hook/ament_prefix_path.dsv
 source;share/hull_serial/hook/ament_prefix_path.sh
-source;../../build/hull_serial/share/hull_serial/hook/pythonpath_develop.ps1
-source;../../build/hull_serial/share/hull_serial/hook/pythonpath_develop.dsv
-source;../../build/hull_serial/share/hull_serial/hook/pythonpath_develop.sh

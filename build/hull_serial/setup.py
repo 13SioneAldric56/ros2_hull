@@ -1,1 +1,0 @@
-/home/sione/ros2_hull/src/hull_serial/setup.py

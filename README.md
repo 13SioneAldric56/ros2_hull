@@ -102,13 +102,56 @@ ros2 run tf2_tools view_frames
 
 # 终端 1：主栈（保持运行）
 cd ~/ros2_hull && source install/setup.bash
+export FASTDDS_BUILTIN_TRANSPORTS=UDPv4   # 避免 SHM 导致 ros2 topic echo 读不到
 ros2 launch hull_navigation navigation.launch.py
 
-# 终端 2：发目标
+# 终端 2：发目标（需先 source 工作区）
 source ~/ros2_hull/install/setup.bash
+export FASTDDS_BUILTIN_TRANSPORTS=UDPv4
 ros2 run hull_navigation send_nav_goal 22.405100 113.536800
 
-# 终端 3：看距离和航向差
+# 或使用自带环境脚本（无需手动 source）：
+bash ~/ros2_hull/src/hull_navigation/scripts/send_goal.sh 22.405100 113.536800
+
+# 取消导航
+ros2 topic pub --once /navigation/cancel std_msgs/msg/Empty "{}"
+
+# 终端 3：看距离和状态
 source ~/ros2_hull/install/setup.bash
+export FASTDDS_BUILTIN_TRANSPORTS=UDPv4
 ros2 topic echo /navigation/distance_remaining
-ros2 topic echo /navigation/heading_error_deg
+ros2 topic echo /navigation/status
+ros2 topic echo /cmd_vel
+```
+
+## GPS 导航（默认：gps_navigator_node）
+
+默认使用轻量 **gps_navigator_node** 直接输出 `/cmd_vel`（线速度 `linear.x` + 角速度 `angular.z`），不依赖 Nav2 控制器。
+
+### 架构（默认 gps_navigator）
+
+```
+/fix + /imu/data → gps_imu_fusion_node → /odometry/global + TF map→base_link
+    → gps_navigator_node → /cmd_vel → cmd_vel_stub
+/navigation/goal (NavSatFix) → gps_navigator_node
+```
+
+Nav2 模式（`use_nav2:=true`）仍使用双 EKF + navsat_transform。
+
+### 关键参数（`config/navigation.yaml`）
+
+| 节点 | 参数 | 默认 |
+|------|------|------|
+| `gps_navigator` | `publish_cmd_vel` | `true` |
+| `gps_navigator` | `max_linear_speed` | 0.5 m/s |
+| `gps_navigator` | `max_angular_speed` | 1.0 rad/s |
+| `gps_navigator` | `arrival_radius_m` | 2.0 m |
+| `cmd_vel_stub` | `watchdog_timeout_s` | 0.5 s |
+
+### 可选：Nav2 开阔水域导航
+
+若需 Nav2 规划/跟踪，启动时加 `use_nav2:=true`（需安装 Nav2 依赖）：
+
+```bash
+ros2 launch hull_navigation navigation.launch.py use_nav2:=true
+```

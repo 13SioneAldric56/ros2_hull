@@ -1,1 +1,1 @@
-geometry_msgs;nav_msgs;rclcpp;rclcpp_action;sensor_msgs;rclpy;tf2_geometry_msgs;tf2_ros;mapviz;swri_transform_util;ament_lint_auto;ament_lint_common
+geometry_msgs;nav_msgs;rclcpp;rclcpp_action;sensor_msgs;rclpy;tf2_geometry_msgs;tf2_ros;mapviz;mapviz_plugins;swri_transform_util;ament_lint_auto;ament_lint_common

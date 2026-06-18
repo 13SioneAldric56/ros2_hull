@@ -1,0 +1,1 @@
+/home/sione/ros2_hull/src/hull_navigation/scripts/send_goal.sh

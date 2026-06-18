@@ -1,0 +1,38 @@
+running develop
+Removing /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull-serial.egg-link (link to .)
+running egg_info
+writing ../../build/hull_serial/hull_serial.egg-info/PKG-INFO
+writing dependency_links to ../../build/hull_serial/hull_serial.egg-info/dependency_links.txt
+writing entry points to ../../build/hull_serial/hull_serial.egg-info/entry_points.txt
+writing requirements to ../../build/hull_serial/hull_serial.egg-info/requires.txt
+writing top-level names to ../../build/hull_serial/hull_serial.egg-info/top_level.txt
+reading manifest file '../../build/hull_serial/hull_serial.egg-info/SOURCES.txt'
+writing manifest file '../../build/hull_serial/hull_serial.egg-info/SOURCES.txt'
+running build
+running build_py
+copying hull_serial/serial_imu_node.py -> /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial
+running install
+running install_lib
+creating /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/imu_odometry_integrator.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/__init__.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/gx_frame_parser.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/imu_frame_adapter.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/serial_imu_node.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/imu_odometry_integrator.py to imu_odometry_integrator.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/gx_frame_parser.py to gx_frame_parser.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/imu_frame_adapter.py to imu_frame_adapter.cpython-310.pyc
+byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/serial_imu_node.py to serial_imu_node.cpython-310.pyc
+running install_data
+copying resource/hull_serial -> /home/sione/ros2_hull/install/hull_serial/share/ament_index/resource_index/packages
+copying package.xml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial
+copying launch/serial_imu.launch.py -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/launch
+copying config/serial_imu.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+copying config/serial_imu.rviz -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+copying config/serial_imu_nav.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+running install_egg_info
+Copying ../../build/hull_serial/hull_serial.egg-info to /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial-0.1.0-py3.10.egg-info
+running install_scripts
+Installing serial_imu_node script to /home/sione/ros2_hull/install/hull_serial/lib/hull_serial
+writing list of installed files to '/home/sione/ros2_hull/build/hull_serial/install.log'

@@ -6,6 +6,8 @@ from __future__ import annotations
 import threading
 import time
 
+import math
+
 import rclpy
 from geometry_msgs.msg import Point, Pose, PoseStamped, Quaternion, TransformStamped, Twist
 from nav_msgs.msg import Odometry, Path
@@ -29,7 +31,7 @@ class GxSerialBridgeNode(Node):
     def __init__(self) -> None:
         super().__init__('gx_serial_bridge')
 
-        self.declare_parameter('port', '/dev/serial_1')
+        self.declare_parameter('port', '/dev/ttyUSB0')
         self.declare_parameter('baudrate', 115200)
         self.declare_parameter('read_chunk_size', 256)
         self.declare_parameter('odom_frame_id', 'odom')
@@ -57,6 +59,9 @@ class GxSerialBridgeNode(Node):
         self.declare_parameter('gyro_sign', [1.0, 1.0, 1.0])
         self.declare_parameter('reconnect_interval', 2.0)
         self.declare_parameter('error_backoff', 0.5)
+        self.declare_parameter('orientation_covariance', 0.02)
+        self.declare_parameter('angular_velocity_covariance', 0.05)
+        self.declare_parameter('linear_acceleration_covariance', 0.1)
 
         self.port = self.get_parameter('port').value
         self.baudrate = int(self.get_parameter('baudrate').value)
@@ -73,6 +78,15 @@ class GxSerialBridgeNode(Node):
         self.path_min_distance = float(self.get_parameter('path_min_distance').value)
         self.reconnect_interval = float(self.get_parameter('reconnect_interval').value)
         self.error_backoff = float(self.get_parameter('error_backoff').value)
+        self.orientation_covariance = float(
+            self.get_parameter('orientation_covariance').value
+        )
+        self.angular_velocity_covariance = float(
+            self.get_parameter('angular_velocity_covariance').value
+        )
+        self.linear_acceleration_covariance = float(
+            self.get_parameter('linear_acceleration_covariance').value
+        )
 
         self.frame_adapter = self._load_frame_adapter()
 
@@ -98,8 +112,12 @@ class GxSerialBridgeNode(Node):
         self.parser = GxStreamParser()
         self.serial_port: serial.Serial | None = None
         self._running = True
+        self._bytes_read = 0
+        self._frames_published = 0
+        self._last_frame_monotonic = 0.0
         self._thread = threading.Thread(target=self._read_loop, daemon=True)
         self._thread.start()
+        self.create_timer(5.0, self._report_health)
 
         self.get_logger().info(
             f'GX bridge on {self.port} @ {self.baudrate}, '
@@ -193,9 +211,25 @@ class GxSerialBridgeNode(Node):
                 time.sleep(0.001)
                 continue
 
+            self._bytes_read += len(chunk)
             for frame in self.parser.feed(chunk):
                 if self._running:
                     self._publish_frame(frame)
+
+    def _report_health(self) -> None:
+        if self._frames_published > 0:
+            age = time.monotonic() - self._last_frame_monotonic
+            if age > 2.0:
+                self.get_logger().warn(
+                    f'No GX frames for {age:.1f}s on {self.port} '
+                    f'(total frames={self._frames_published})'
+                )
+            return
+
+        self.get_logger().warn(
+            f'No /imu/data yet on {self.port}: bytes_read={self._bytes_read}. '
+            'Check ESP32 power, USB cable, and that GX binary frames are being sent.'
+        )
 
     def _close_serial(self) -> None:
         port = self.serial_port
@@ -207,26 +241,54 @@ class GxSerialBridgeNode(Node):
             except (SerialException, OSError):
                 pass
 
+    @staticmethod
+    def _set_diagonal_covariance(covariance: list, variance: float) -> None:
+        # sensor_msgs/Imu covariances are 3x3 row-major (9 elements).
+        for i in range(9):
+            covariance[i] = 0.0
+        covariance[0] = variance
+        covariance[4] = variance
+        covariance[8] = variance
+
+    @staticmethod
+    def _normalize_quaternion(qx: float, qy: float, qz: float, qw: float) -> Quaternion:
+        norm = math.sqrt(qx * qx + qy * qy + qz * qz + qw * qw)
+        if not math.isfinite(norm) or norm < 1e-9:
+            return Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)
+        inv = 1.0 / norm
+        return Quaternion(x=qx * inv, y=qy * inv, z=qz * inv, w=qw * inv)
+
     def _publish_frame(self, frame: GxImuFrame) -> None:
         stamp = self.get_clock().now().to_msg()
         (qx, qy, qz, qw), (acc_x, acc_y, acc_z), (gyro_x, gyro_y, gyro_z) = (
             self._adapt_frame(frame)
         )
-        orientation = Quaternion(x=qx, y=qy, z=qz, w=qw)
+        orientation = self._normalize_quaternion(qx, qy, qz, qw)
 
         imu_msg = Imu()
         imu_msg.header = Header(stamp=stamp, frame_id=self.imu_frame_id)
         imu_msg.orientation = orientation
-        imu_msg.orientation_covariance[0] = 0.01
-        imu_msg.orientation_covariance[4] = 0.01
-        imu_msg.orientation_covariance[8] = 0.01
+        self._set_diagonal_covariance(
+            imu_msg.orientation_covariance,
+            self.orientation_covariance,
+        )
         imu_msg.angular_velocity.x = gyro_x
         imu_msg.angular_velocity.y = gyro_y
         imu_msg.angular_velocity.z = gyro_z
+        self._set_diagonal_covariance(
+            imu_msg.angular_velocity_covariance,
+            self.angular_velocity_covariance,
+        )
         imu_msg.linear_acceleration.x = acc_x
         imu_msg.linear_acceleration.y = acc_y
         imu_msg.linear_acceleration.z = acc_z
+        self._set_diagonal_covariance(
+            imu_msg.linear_acceleration_covariance,
+            self.linear_acceleration_covariance,
+        )
         self.imu_pub.publish(imu_msg)
+        self._frames_published += 1
+        self._last_frame_monotonic = time.monotonic()
 
         position = Point(x=0.0, y=0.0, z=0.0)
         twist = Twist()

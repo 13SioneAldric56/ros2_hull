@@ -1,0 +1,30 @@
+running develop
+running egg_info
+writing hull_navigation.egg-info/PKG-INFO
+writing dependency_links to hull_navigation.egg-info/dependency_links.txt
+writing entry points to hull_navigation.egg-info/entry_points.txt
+writing requirements to hull_navigation.egg-info/requires.txt
+writing top-level names to hull_navigation.egg-info/top_level.txt
+reading manifest file 'hull_navigation.egg-info/SOURCES.txt'
+writing manifest file 'hull_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/sione/ros2_hull/install/hull_navigation/lib/python3.10/site-packages/hull-navigation.egg-link (link to .)
+Installing cmd_vel_stub_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_goal_bridge_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_imu_fusion_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_navigator_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing gps_velocity_adapter_node script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+Installing send_nav_goal script to /home/sione/ros2_hull/install/hull_navigation/lib/hull_navigation
+
+Installed /home/sione/ros2_hull/build/hull_navigation
+running symlink_data
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/resource/hull_navigation -> /home/sione/ros2_hull/install/hull_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/package.xml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/navigation.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/nav2_open_water.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/launch/localization.launch.py -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/launch
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/hardware_ports.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/navigation.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/nav2_params.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/config/ekf.yaml -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/config
+symbolically linking /home/sione/ros2_hull/build/hull_navigation/scripts/send_goal.sh -> /home/sione/ros2_hull/install/hull_navigation/share/hull_navigation/scripts

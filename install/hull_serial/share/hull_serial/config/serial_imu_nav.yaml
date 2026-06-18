@@ -1,1 +1,32 @@
-/home/sione/ros2_hull/build/hull_serial/config/serial_imu_nav.yaml
+gx_serial_bridge:
+  ros__parameters:
+    port: "/dev/ttyUSB0"
+    baudrate: 115200
+    read_chunk_size: 256
+    odom_frame_id: "odom"
+    imu_frame_id: "imu_link"
+    publish_tf: false
+    publish_odom: false
+    enable_position_integration: false
+    publish_path: false
+    gravity: 9.80665
+    gravity_calib_samples: 100
+    velocity_damping: 0.2
+    max_velocity: 2.0
+    bias_learning_rate: 0.03
+    motion_accel_threshold: 0.45
+    path_min_distance: 0.02
+    zupt_accel_threshold: 0.2
+    zupt_gyro_threshold: 0.12
+    orientation_rpy_offset_deg: [0.0, -90.0, 0.0]
+    orientation_fix_order: "post"
+    invert_orientation: false
+    acc_remap: [0, 1, 2]
+    acc_sign: [1.0, 1.0, 1.0]
+    gyro_remap: [0, 1, 2]
+    gyro_sign: [1.0, 1.0, 1.0]
+    reconnect_interval: 2.0
+    error_backoff: 0.5
+    orientation_covariance: 0.02
+    angular_velocity_covariance: 0.05
+    linear_acceleration_covariance: 0.1

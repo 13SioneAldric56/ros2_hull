@@ -35,6 +35,7 @@ class GpsNavigatorNode(Node):
         self.declare_parameter('fix_topic', '/fix')
         self.declare_parameter('goal_topic', '/navigation/goal')
         self.declare_parameter('cancel_topic', '/navigation/cancel')
+        self.declare_parameter('plan_topic', '/plan')
         self.declare_parameter('cmd_vel_topic', '/cmd_vel')
         self.declare_parameter('arrival_radius_m', 2.0)
         self.declare_parameter('max_linear_speed', 0.5)
@@ -75,6 +76,7 @@ class GpsNavigatorNode(Node):
         fix_topic = self.get_parameter('fix_topic').value
         goal_topic = self.get_parameter('goal_topic').value
         cancel_topic = self.get_parameter('cancel_topic').value
+        plan_topic = self.get_parameter('plan_topic').value
         cmd_vel_topic = self.get_parameter('cmd_vel_topic').value
 
         self.status_pub = self.create_publisher(String, '/navigation/status', 10)
@@ -83,7 +85,7 @@ class GpsNavigatorNode(Node):
         self.heading_pub = self.create_publisher(Float64, '/navigation/current_heading_deg', 10)
         self.heading_error_pub = self.create_publisher(Float64, '/navigation/heading_error_deg', 10)
         self.goal_pose_pub = self.create_publisher(PoseStamped, '/navigation/goal_pose', 10)
-        self.plan_pub = self.create_publisher(Path, '/navigation/plan', 10)
+        self.plan_pub = self.create_publisher(Path, plan_topic, 10)
         self.cmd_vel_pub = self.create_publisher(Twist, cmd_vel_topic, 10)
 
         self.create_subscription(Odometry, odom_topic, self._odom_callback, 10)
@@ -180,6 +182,7 @@ class GpsNavigatorNode(Node):
         self._state = self.STATE_IDLE
         self._publish_status(reason)
         self.cmd_vel_pub.publish(Twist())
+        self._publish_plan(clear=True)
         self.get_logger().info(reason)
 
     def _control_loop(self) -> None:
@@ -227,6 +230,7 @@ class GpsNavigatorNode(Node):
             )
             self.cmd_vel_pub.publish(cmd)
 
+        self._publish_plan()
         self._publish_status(
             f'NAVIGATING dist={dist:.1f}m bearing={deg(bearing):.0f}° '
             f'heading_err={deg(heading_error):.0f}°'
@@ -245,8 +249,12 @@ class GpsNavigatorNode(Node):
         pose.pose.orientation.w = 1.0
         self.goal_pose_pub.publish(pose)
 
-    def _publish_plan(self) -> None:
-        if not self._has_pose or self._goal_x is None or self._goal_y is None:
+    def _publish_plan(self, clear: bool = False) -> None:
+        if clear or not self._has_pose or self._goal_x is None or self._goal_y is None:
+            empty = Path()
+            empty.header.stamp = self.get_clock().now().to_msg()
+            empty.header.frame_id = self.map_frame
+            self.plan_pub.publish(empty)
             return
         path = Path()
         path.header.stamp = self.get_clock().now().to_msg()

@@ -8,12 +8,17 @@ setup.py
 ../../build/hull_navigation/hull_navigation.egg-info/requires.txt
 ../../build/hull_navigation/hull_navigation.egg-info/top_level.txt
 ../../build/hull_navigation/hull_navigation.egg-info/zip-safe
+config/ekf.yaml
 config/hardware_ports.yaml
+config/nav2_params.yaml
 config/navigation.yaml
 hull_navigation/__init__.py
+hull_navigation/cmd_vel_stub_node.py
 hull_navigation/geo_utils.py
+hull_navigation/gps_goal_bridge_node.py
 hull_navigation/gps_imu_fusion_node.py
 hull_navigation/gps_navigator_node.py
+hull_navigation/gps_velocity_adapter_node.py
 hull_navigation/send_nav_goal.py
 hull_navigation.egg-info/PKG-INFO
 hull_navigation.egg-info/SOURCES.txt
@@ -22,5 +27,8 @@ hull_navigation.egg-info/entry_points.txt
 hull_navigation.egg-info/requires.txt
 hull_navigation.egg-info/top_level.txt
 hull_navigation.egg-info/zip-safe
+launch/localization.launch.py
+launch/nav2_open_water.launch.py
 launch/navigation.launch.py
 resource/hull_navigation
+scripts/send_goal.sh

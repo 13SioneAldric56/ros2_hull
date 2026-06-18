@@ -29,10 +29,21 @@ def main() -> None:
     msg.longitude = lon
     msg.altitude = alt
 
-    pub.publish(msg)
-    node.get_logger().info(f'Sent navigation goal: lat={lat}, lon={lon}, alt={alt}')
+    # Wait for navigator to discover this publisher (ROS 2 DDS latency).
+    deadline = node.get_clock().now().nanoseconds + int(5e9)
+    while pub.get_subscription_count() < 1:
+        if node.get_clock().now().nanoseconds > deadline:
+            node.get_logger().error(
+                'No subscriber on /navigation/goal after 5s. '
+                'Is navigation.launch.py running?'
+            )
+            raise SystemExit(1)
+        rclpy.spin_once(node, timeout_sec=0.1)
 
-    rclpy.spin_once(node, timeout_sec=0.5)
+    pub.publish(msg)
+    rclpy.spin_once(node, timeout_sec=0.2)
+
+    node.get_logger().info(f'Sent navigation goal: lat={lat}, lon={lon}, alt={alt}')
     node.destroy_node()
     rclpy.shutdown()
 

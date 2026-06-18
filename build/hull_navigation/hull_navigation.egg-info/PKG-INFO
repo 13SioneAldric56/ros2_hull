@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: hull-navigation
-Version: 0.1.0
-Summary: GPS + IMU fusion for hull navigation
+Version: 0.2.0
+Summary: GPS + IMU localization and Nav2 open-water navigation for hull
 Home-page: UNKNOWN
 Maintainer: user
 Maintainer-email: user@todo.todo

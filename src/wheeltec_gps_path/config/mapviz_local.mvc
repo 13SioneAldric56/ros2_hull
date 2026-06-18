@@ -47,20 +47,13 @@ displays:
       topic: /gps_path
       color: "#ff0000"
   - type: mapviz_plugins/path
-    name: Fused Path
-    config:
-      visible: true
-      collapsed: false
-      topic: /fused_path
-      color: "#0000ff"
-  - type: mapviz_plugins/path
     name: Nav Plan
     config:
       visible: true
       collapsed: false
-      topic: /navigation/plan
+      topic: /plan
       color: "#ffff00"
-  - type: mapviz_plugins/point
+  - type: mapviz_plugins/pose
     name: Nav Goal
     config:
       visible: true

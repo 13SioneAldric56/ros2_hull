@@ -1,6 +1,6 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.conditions import IfCondition
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, TimerAction
+from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
@@ -30,9 +30,19 @@ def generate_launch_description():
             description='ESP32 serial port for GX binary IMU frames (115200)',
         ),
         DeclareLaunchArgument(
+            'stern_offset_m',
+            default_value='-2.0',
+            description='IMU/GPS stern offset from base_link center along +X (m)',
+        ),
+        DeclareLaunchArgument(
             'use_gps_path_viz',
             default_value='true',
             description='Publish /gps_path from raw GPS for map comparison',
+        ),
+        DeclareLaunchArgument(
+            'use_nav2',
+            default_value='false',
+            description='Use Nav2 + gps_goal_bridge for /cmd_vel (default: gps_navigator_node)',
         ),
         DeclareLaunchArgument(
             'use_mapviz',
@@ -51,7 +61,12 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 nmea_config,
-                {'port': LaunchConfiguration('gps_port')},
+                {
+                    'port': LaunchConfiguration('gps_port'),
+                    # Use GGA for /fix (includes altitude; required by navsat_transform).
+                    # RMC sentences still publish /vel (SOG/COG) when VTG is unavailable.
+                    'useRMC': False,
+                },
             ],
         ),
         IncludeLaunchDescription(
@@ -64,12 +79,33 @@ def generate_launch_description():
                 'use_rviz': 'false',
             }.items(),
         ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(hull_nav_share, 'launch', 'localization.launch.py')
+            ),
+            launch_arguments={
+                'stern_offset_m': LaunchConfiguration('stern_offset_m'),
+                'use_nav2': LaunchConfiguration('use_nav2'),
+            }.items(),
+        ),
+        TimerAction(
+            period=8.0,
+            actions=[
+                IncludeLaunchDescription(
+                    PythonLaunchDescriptionSource(
+                        os.path.join(hull_nav_share, 'launch', 'nav2_open_water.launch.py')
+                    ),
+                ),
+            ],
+            condition=IfCondition(LaunchConfiguration('use_nav2')),
+        ),
         Node(
             package='hull_navigation',
-            executable='gps_imu_fusion_node',
-            name='gps_imu_fusion',
+            executable='gps_goal_bridge_node',
+            name='gps_goal_bridge',
             output='screen',
             parameters=[nav_config],
+            condition=IfCondition(LaunchConfiguration('use_nav2')),
         ),
         Node(
             package='hull_navigation',
@@ -77,12 +113,14 @@ def generate_launch_description():
             name='gps_navigator',
             output='screen',
             parameters=[nav_config],
+            condition=UnlessCondition(LaunchConfiguration('use_nav2')),
         ),
         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='base_link_to_imu_link',
-            arguments=['0', '0', '0', '0', '0', '0', 'base_link', 'imu_link'],
+            package='hull_navigation',
+            executable='cmd_vel_stub_node',
+            name='cmd_vel_stub',
+            output='screen',
+            parameters=[nav_config],
         ),
         Node(
             package='wheeltec_gps_path',

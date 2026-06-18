@@ -1,0 +1,42 @@
+[0.603s] Invoking command in '/home/sione/ros2_hull/build/hull_serial': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/sione/ros2_hull/build/hull_serial/build
+[0.874s] running develop
+[1.000s] Removing /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull-serial.egg-link (link to .)
+[1.028s] Invoked command in '/home/sione/ros2_hull/build/hull_serial' returned '0': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/sione/ros2_hull/build/hull_serial/build
+[1.031s] Invoking command in '/home/sione/ros2_hull/src/hull_serial': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hull_serial build --build-base /home/sione/ros2_hull/build/hull_serial/build install --record /home/sione/ros2_hull/build/hull_serial/install.log --single-version-externally-managed install_data --force
+[1.280s] running egg_info
+[1.280s] writing ../../build/hull_serial/hull_serial.egg-info/PKG-INFO
+[1.280s] writing dependency_links to ../../build/hull_serial/hull_serial.egg-info/dependency_links.txt
+[1.280s] writing entry points to ../../build/hull_serial/hull_serial.egg-info/entry_points.txt
+[1.280s] writing requirements to ../../build/hull_serial/hull_serial.egg-info/requires.txt
+[1.281s] writing top-level names to ../../build/hull_serial/hull_serial.egg-info/top_level.txt
+[1.282s] reading manifest file '../../build/hull_serial/hull_serial.egg-info/SOURCES.txt'
+[1.285s] writing manifest file '../../build/hull_serial/hull_serial.egg-info/SOURCES.txt'
+[1.285s] running build
+[1.285s] running build_py
+[1.285s] copying hull_serial/serial_imu_node.py -> /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial
+[1.285s] running install
+[1.286s] running install_lib
+[1.287s] creating /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.287s] copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/imu_odometry_integrator.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.287s] copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/__init__.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.288s] copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/gx_frame_parser.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.288s] copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/imu_frame_adapter.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.288s] copying /home/sione/ros2_hull/build/hull_serial/build/lib/hull_serial/serial_imu_node.py -> /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial
+[1.289s] byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/imu_odometry_integrator.py to imu_odometry_integrator.cpython-310.pyc
+[1.290s] byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/__init__.py to __init__.cpython-310.pyc
+[1.291s] byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/gx_frame_parser.py to gx_frame_parser.cpython-310.pyc
+[1.291s] byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/imu_frame_adapter.py to imu_frame_adapter.cpython-310.pyc
+[1.292s] byte-compiling /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial/serial_imu_node.py to serial_imu_node.cpython-310.pyc
+[1.294s] running install_data
+[1.295s] copying resource/hull_serial -> /home/sione/ros2_hull/install/hull_serial/share/ament_index/resource_index/packages
+[1.295s] copying package.xml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial
+[1.296s] copying launch/serial_imu.launch.py -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/launch
+[1.296s] copying config/serial_imu.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+[1.296s] copying config/serial_imu.rviz -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+[1.296s] copying config/serial_imu_nav.yaml -> /home/sione/ros2_hull/install/hull_serial/share/hull_serial/config
+[1.296s] running install_egg_info
+[1.298s] Copying ../../build/hull_serial/hull_serial.egg-info to /home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages/hull_serial-0.1.0-py3.10.egg-info
+[1.298s] running install_scripts
+[1.325s] Installing serial_imu_node script to /home/sione/ros2_hull/install/hull_serial/lib/hull_serial
+[1.325s] writing list of installed files to '/home/sione/ros2_hull/build/hull_serial/install.log'
+[1.357s] Invoked command in '/home/sione/ros2_hull/src/hull_serial' returned '0': PYTHONPATH=/home/sione/ros2_hull/build/hull_serial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sione/ros2_hull/install/hull_serial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/hull_serial build --build-base /home/sione/ros2_hull/build/hull_serial/build install --record /home/sione/ros2_hull/build/hull_serial/install.log --single-version-externally-managed install_data --force

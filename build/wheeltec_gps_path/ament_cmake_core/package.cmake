@@ -5,7 +5,7 @@ set(wheeltec_gps_path_BUILD_DEPENDS "geometry_msgs" "nav_msgs" "rclcpp" "rclcpp_
 set(wheeltec_gps_path_BUILDTOOL_DEPENDS "ament_cmake")
 set(wheeltec_gps_path_BUILD_EXPORT_DEPENDS "geometry_msgs" "nav_msgs" "rclcpp" "rclcpp_action" "sensor_msgs" "rclpy" "tf2_geometry_msgs" "tf2_ros")
 set(wheeltec_gps_path_BUILDTOOL_EXPORT_DEPENDS )
-set(wheeltec_gps_path_EXEC_DEPENDS "mapviz" "swri_transform_util" "geometry_msgs" "nav_msgs" "rclcpp" "rclcpp_action" "sensor_msgs" "rclpy" "tf2_geometry_msgs" "tf2_ros")
+set(wheeltec_gps_path_EXEC_DEPENDS "mapviz" "mapviz_plugins" "swri_transform_util" "geometry_msgs" "nav_msgs" "rclcpp" "rclcpp_action" "sensor_msgs" "rclpy" "tf2_geometry_msgs" "tf2_ros")
 set(wheeltec_gps_path_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(wheeltec_gps_path_GROUP_DEPENDS )
 set(wheeltec_gps_path_MEMBER_OF_GROUPS )

@@ -22,6 +22,7 @@
   <depend>tf2_ros</depend>
 
   <exec_depend>mapviz</exec_depend>
+  <exec_depend>mapviz_plugins</exec_depend>
   <exec_depend>swri_transform_util</exec_depend>
 
   <export>

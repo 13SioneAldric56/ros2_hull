@@ -27,3 +27,6 @@ gx_serial_bridge:
     gyro_sign: [1.0, 1.0, 1.0]
     reconnect_interval: 2.0
     error_backoff: 0.5
+    orientation_covariance: 0.02
+    angular_velocity_covariance: 0.05
+    linear_acceleration_covariance: 0.1
